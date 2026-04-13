@@ -1,0 +1,29 @@
+:root {
+    --primary: #5B4BFF;
+    --primary-dark: #4838E0;
+    --accent: #EEF0FF;
+    --bg-soft: #F1F3FF;
+    --bg-body: #F7F8FC;
+    --text-main: #1A1A1A;
+    --text-muted: #777;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #F5F7FF 0%, #EDEFFF 100%);
+    color: var(--text-main);
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+

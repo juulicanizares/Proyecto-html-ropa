@@ -1,0 +1,85 @@
+.main-header {
+    background: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    border-bottom: 1px solid #E0E3FF;
+    box-shadow: 0 4px 10px rgba(91,75,255,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.header-nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #02270c;
+    font-size: 0.75rem;
+    background: #ffffff;
+    color: #000000;
+    transition: all 0.25s ease;
+}
+
+
+.nav-btn:hover {
+    background: #5B4BFF;
+    color: white;
+}
+
+
+.nav-btn.active {
+    background: #5B4BFF;
+    color: white;
+}
+
+.nav-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+main {
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.profile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-link {
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}

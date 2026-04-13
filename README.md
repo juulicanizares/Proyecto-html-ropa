@@ -1,4 +1,16 @@
 # Proyecto-HTML
+
+## Descripción
+
+Este proyecto consiste en el desarrollo de una tienda web estática utilizando HTML y CSS. Su objetivo es simular el flujo completo de compra de un usuario, desde la visualización de productos hasta el proceso de pago.
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- Diseño Responsive
+
+
 # creacion de carpetas del proyecto
 
 Se inició el desarrollo del proyecto mediante la creación de la estructura de carpetas y archivos necesarios para organizar correctamente todos los recursos. Esta estructura permite mantener un orden claro entre archivos HTML, estilos CSS e imágenes, facilitando el mantenimiento y la escalabilidad del proyecto a futuro.
@@ -77,4 +89,23 @@ Se implementó el archivo responsive.css, destinado a adaptar el diseño del pro
 
 ![carpetas](IMG/responsive.png)
 
+##  Vista del proyecto
+![carpetas](IMG/vistaf.png)
 
+###  Página principal
+![carpetas](IMG/home.png)
+
+###  Catálogo
+![carpetas](IMG/catalogof.png)
+
+###  perfil
+![carpetas](IMG/perfilf.png)
+
+###  Carrito
+![carpetas](IMG/carritof.png)
+
+
+##  Autor
+
+- Ruben Santiago Carreño Torres
+- PROYECTO-HTML-ROPA

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | App Oficial</title>
+
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/components.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <h1 class="logo">CampusShop</h1>
+
+    <nav class="header-nav">
+        <a href="index.html" class="nav-btn active">Inicio</a>
+        <a href="catalogo.html" class="nav-btn">Catálogo</a>
+
+
+        <a href="perfil.html" class="nav-btn">Perfil</a>
+
+        <a href="carrito.html" class="cart-status">
+            🛒 <span id="cart-count">0</span>
+        </a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="search-box">
+        <input type="text" placeholder="¿Qué quieres comprar hoy?">
+    </div>
+
+    <h2 class="section-title">Categorías</h2>
+
+
+    <div class="filter-wrapper">
+
+        <!-- radios -->
+        <input type="radio" name="filtro" id="all" checked>
+        <input type="radio" name="filtro" id="camisetas">
+        <input type="radio" name="filtro" id="hoodies">
+
+        <div class="filter-group">
+            <label for="all" class="filter-btn">Todos</label>
+            <label for="camisetas" class="filter-btn btn-cam">Camisetas</label>
+            <label for="hoodies" class="filter-btn btn-hoo">Hoodies</label>
+        </div>
+
+
+        <div class="product-grid" id="grid-productos">
+
+            <article class="product-card camiseta">
+                <div class="badge oferta">OFERTA</div>
+                <div class="img-container">
+                    <img src="IMG/producto2.png" alt="Camiseta undergold">
+                </div>
+                <div class="product-info">
+                    <h3>Camiseta undergold</h3>
+                    <p class="price">$300.000</p>
+                    <button class="add-btn">AGREGAR</button>
+                </div>
+            </article>
+
+            <article class="product-card hoodie">
+                <div class="badge stock">NUEVO</div>
+                <div class="img-container">
+                    <img src="IMG/producto3.png" alt="Hoodie clemont">
+                </div>
+                <div class="product-info">
+                    <h3>Hoodie clemont</h3>
+                    <p class="price">$400.000</p>
+                    <button class="add-btn">AGREGAR</button>
+                </div>
+            </article>
+
+            <article class="product-card camiseta">
+                <div class="img-container">
+                    <img src="IMG/producto4.png" alt="Camiseta clemont">
+                </div>
+                <div class="product-info">
+                    <h3>Camiseta clemont</h3>
+                    <p class="price">$300.000</p>
+                    <button class="add-btn">AGREGAR</button>
+                </div>
+            </article>
+
+            <article class="product-card hoodie">
+                <div class="badge oferta">TOP</div>
+                <div class="img-container">
+                    <img src="IMG/producto1.png" alt="Hoodie Grey Zip">
+                </div>
+                <div class="product-info">
+                    <h3>Hoodie UNDGLD</h3>
+                    <p class="price">$550.000</p>
+                    <button class="add-btn">AGREGAR</button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>

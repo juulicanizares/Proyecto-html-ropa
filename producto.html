@@ -2,23 +2,95 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Producto</title>
 
-<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="CSS/base.css">
+<link rel="stylesheet" href="CSS/layout.css">
+<link rel="stylesheet" href="CSS/components.css">
 </head>
 
 <body>
 
+<header class="main-header">
+    <h1 class="logo">Producto</h1>
+
+    <nav class="header-nav">
+        <a href="index.html" class="nav-btn">Inicio</a>
+        <a href="catalogo.html" class="nav-btn">Catálogo</a>
+        <a href="carrito.html" class="cart-status">🛒 0</a>
+    </nav>
+</header>
+
 <main>
 
-<h1>Camiseta Oversize</h1>
-<p>$100</p>
+<section class="product-detail">
 
-<p>Descripción del producto...</p>
+<div class="img-container">
+    <img id="imgProducto">
+</div>
 
-<a href="carrito.html">Agregar al carrito</a>
+<div class="product-info">
+
+<h2 id="nombre"></h2>
+<p class="price" id="precio"></p>
+
+<p id="descripcion"></p>
+
+<h3 class="section-title">Tallas</h3>
+
+<div class="size-selector">
+<input type="radio" name="talla" id="s"><label for="s" class="filter-btn">S</label>
+<input type="radio" name="talla" id="m"><label for="m" class="filter-btn">M</label>
+<input type="radio" name="talla" id="l"><label for="l" class="filter-btn">L</label>
+</div>
+
+<a href="carrito.html">
+<button class="add-btn">Agregar al carrito</button>
+</a>
+
+</div>
+
+</section>
 
 </main>
+
+<script>
+
+
+const params = new URLSearchParams(window.location.search);
+const prod = params.get("prod");
+
+
+if (prod === "clemont") {
+    document.getElementById("imgProducto").src = "IMG/producto4.png";
+    document.getElementById("nombre").textContent = "Camiseta clemont";
+    document.getElementById("precio").textContent = "$300.000";
+    document.getElementById("descripcion").textContent = "Camiseta clemont estilo urbano moderno.";
+}
+
+if (prod === "undgld") {
+    document.getElementById("imgProducto").src = "IMG/producto2.png";
+    document.getElementById("nombre").textContent = "Camiseta undergold";
+    document.getElementById("precio").textContent = "$300.000";
+    document.getElementById("descripcion").textContent = "Camiseta undergold cómoda y resistente.";
+}
+
+if (prod === "hoodie-clemont") {
+    document.getElementById("imgProducto").src = "IMG/producto3.png";
+    document.getElementById("nombre").textContent = "Hoodie clemont";
+    document.getElementById("precio").textContent = "$400.000";
+    document.getElementById("descripcion").textContent = "Hoodie clemont moderno y abrigado.";
+}
+
+if (prod === "hoodie-undgld") {
+    document.getElementById("imgProducto").src = "IMG/producto1.png";
+    document.getElementById("nombre").textContent = "Hoodie UNDGLD";
+    document.getElementById("precio").textContent = "$550.000";
+    document.getElementById("descripcion").textContent = "Hoodie UNDGLD premium.";
+}
+
+</script>
 
 </body>
 </html>

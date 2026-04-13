@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout</title>
   <link rel="stylesheet" href="css/base.css">
 </head>
@@ -13,22 +14,46 @@
 
 <main>
 
-<form>
-  <label>Nombre</label>
-  <input type="text">
+<form id="checkoutForm">
+  <label for="nombre">Nombre</label>
+  <input id="nombre" type="text" placeholder="Tu nombre completo" required>
 
-  <label>Dirección</label>
-  <input type="text">
+  <label for="direccion">Dirección</label>
+  <input id="direccion" type="text" placeholder="Dirección de envío" required>
 
-  <label>Tarjeta</label>
-  <input type="text">
+  <label for="tarjeta">Tarjeta</label>
+  <input id="tarjeta" type="text" placeholder="1234 5678 9012 3456" required minlength="16">
 
-  <button>Finalizar compra</button>
+  <button type="submit">Finalizar compra</button>
 </form>
 
 </main>
 
 <footer class="footer"></footer>
+
+<script>
+document.getElementById("checkoutForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const nombre = document.getElementById("nombre").value;
+  const direccion = document.getElementById("direccion").value;
+  const tarjeta = document.getElementById("tarjeta").value;
+
+
+  console.log("Datos del formulario:");
+  console.log({
+    nombre: nombre,
+    direccion: direccion,
+    tarjeta: tarjeta
+  });
+
+
+  alert("Compra realizada con éxito 🎉");
+
+
+  this.reset();
+});
+</script>
 
 </body>
 </html>

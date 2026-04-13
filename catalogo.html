@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <title>Catálogo</title>
 
-<link rel="stylesheet" href="CSS/base.css">
-<link rel="stylesheet" href="CSS/layout.css">
-<link rel="stylesheet" href="CSS/components.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
 </head>
 
 <body>
@@ -26,57 +26,84 @@
 
 <h2 class="section-title">Todos los productos</h2>
 
+<div class="filter-wrapper">
 
-<input type="radio" name="filtro" id="all" checked>
 
-<div class="product-grid">
+    <input type="radio" name="filtro" id="all" checked>
+    <input type="radio" name="filtro" id="camisetas">
+    <input type="radio" name="filtro" id="hoodies">
 
-<article class="product-card camiseta">
-    <div class="img-container">
-        <img src="IMG/producto2.png">
-    </div>
-    <div class="product-info">
-        <h3>Camiseta undergold</h3>
-        <p class="price">$300.000</p>
-        <button class="add-btn">AGREGAR</button>
-    </div>
-</article>
 
-<article class="product-card hoodie">
-    <div class="img-container">
-        <img src="IMG/producto3.png">
+    <div class="filter-group">
+        <label for="all" class="filter-btn">Todos</label>
+        <label for="camisetas" class="filter-btn">Camisetas</label>
+        <label for="hoodies" class="filter-btn">Hoodies</label>
     </div>
-    <div class="product-info">
-        <h3>Hoodie clemont</h3>
-        <p class="price">$160.000</p>
-        <button class="add-btn">AGREGAR</button>
-    </div>
-</article>
 
-<article class="product-card camiseta">
-    <div class="img-container">
-        <img src="IMG/producto4.png">
-    </div>
-    <div class="product-info">
-        <h3>Camiseta clemont</h3>
-        <p class="price">$65.000</p>
-        <button class="add-btn">AGREGAR</button>
-    </div>
-</article>
 
-<article class="product-card hoodie">
-    <div class="img-container">
-        <img src="IMG/producto1.png">
+    <div class="product-grid">
+
+
+        <article class="product-card camiseta">
+            <div class="img-container">
+                <a href="producto.html?prod=undgld">
+                    <img src="img/producto2.png" alt="Camiseta undergold">
+                </a>
+            </div>
+            <div class="product-info">
+                <h3>Camiseta undergold</h3>
+                <p class="price">$300.000</p>
+                <button class="add-btn">AGREGAR</button>
+            </div>
+        </article>
+
+
+        <article class="product-card hoodie">
+            <div class="img-container">
+                <a href="producto.html?prod=hoodie-clemont">
+                    <img src="img/producto3.png" alt="Hoodie clemont">
+                </a>
+            </div>
+            <div class="product-info">
+                <h3>Hoodie clemont</h3>
+                <p class="price">$400.000</p>
+                <button class="add-btn">AGREGAR</button>
+            </div>
+        </article>
+
+
+        <article class="product-card camiseta">
+            <div class="img-container">
+                <a href="producto.html?prod=clemont">
+                    <img src="img/producto4.png" alt="Camiseta clemont">
+                </a>
+            </div>
+            <div class="product-info">
+                <h3>Camiseta clemont</h3>
+                <p class="price">$300.000</p>
+                <button class="add-btn">AGREGAR</button>
+            </div>
+        </article>
+
+        <!-- PRODUCTO 4 -->
+        <article class="product-card hoodie">
+            <div class="img-container">
+                <a href="producto.html?prod=hoodie-undgld">
+                    <img src="img/producto1.png" alt="Hoodie UNDGLD">
+                </a>
+            </div>
+            <div class="product-info">
+                <h3>Hoodie UNDGLD</h3>
+                <p class="price">$550.000</p>
+                <button class="add-btn">AGREGAR</button>
+            </div>
+        </article>
+
     </div>
-    <div class="product-info">
-        <h3>Hoodie Grey Zip</h3>
-        <p class="price">$195.000</p>
-        <button class="add-btn">AGREGAR</button>
-    </div>
-</article>
 
 </div>
 
 </main>
+
 </body>
 </html>

@@ -8,6 +8,74 @@
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/responsive.css">
+
+<style>
+/* Fondo */
+body {
+    background: #f5f7ff;
+}
+
+/* Contenedor del formulario */
+.checkout-box {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 25px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* Título */
+.checkout-box h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Formulario */
+.checkout-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Labels */
+.checkout-box label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Inputs */
+.checkout-box input {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 0.85rem;
+}
+
+/* Focus */
+.checkout-box input:focus {
+    border-color: #0095ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,149,255,0.2);
+}
+
+/* Botón */
+.checkout-box .add-btn {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #0095ff, #0066ff);
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+.checkout-box .add-btn:hover {
+    transform: scale(1.03);
+}
+</style>
+
 </head>
 
 <body>
@@ -31,52 +99,33 @@
 </article>
 </section>
 
-<h2>Total: $300.000</h2>
+<h2 style="text-align:center;">Total: $300.000</h2>
 
+<p style="text-align:center;"><strong>Completa tus datos para finalizar la compra:</strong></p>
 
-<button class="add-btn" onclick="mostrarCheckout()">
-    Continuar con la compra
-</button>
+<!-- FORMULARIO MEJORADO -->
+<div class="checkout-box">
 
-<div id="checkout" style="display:none; margin-top:20px;">
+    <h3>Datos de pago</h3>
 
-<form id="checkoutForm">
-    <label for="nombre">Nombre</label>
-    <input id="nombre" type="text" placeholder="Tu nombre completo" required>
+    <form action="gracias.html" method="GET">
+        
+        <label>Nombre completo</label>
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
 
-    <label for="direccion">Dirección</label>
-    <input id="direccion" type="text" placeholder="Dirección de envío" required>
+        <label>Dirección</label>
+        <input type="text" name="direccion" placeholder="Dirección de envío" required>
 
-    <label for="tarjeta">Tarjeta</label>
-    <input id="tarjeta" type="text" placeholder="1234 5678 9012 3456" required minlength="16">
+        <label>Tarjeta</label>
+        <input type="text" name="tarjeta" placeholder="1234 5678 9012 3456" required minlength="16">
 
-    <button type="submit" class="add-btn">Finalizar compra</button>
-</form>
+        <button type="submit" class="add-btn">Finalizar compra</button>
+
+    </form>
 
 </div>
 
 </main>
-
-
-<script>
-function mostrarCheckout() {
-    document.getElementById("checkout").style.display = "block";
-}
-
-document.getElementById("checkoutForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const nombre = document.getElementById("nombre").value;
-    const direccion = document.getElementById("direccion").value;
-    const tarjeta = document.getElementById("tarjeta").value;
-
-    console.log({ nombre, direccion, tarjeta });
-
-    alert("Compra realizada con éxito 🎉");
-
-    this.reset();
-});
-</script>
 
 </body>
 </html>

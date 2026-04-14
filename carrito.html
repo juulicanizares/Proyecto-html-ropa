@@ -1,16 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Carrito</title>
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Idioma del documento -->
 
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/responsive.css">
+<head>
+<meta charset="UTF-8"> <!-- Permite caracteres especiales -->
+<title>Carrito</title> <!-- Título de la pestaña -->
+
+<!-- Enlaces a archivos CSS -->
+<link rel="stylesheet" href="css/base.css"> <!-- Estilos base -->
+<link rel="stylesheet" href="css/layout.css"> <!-- Estructura -->
+<link rel="stylesheet" href="css/components.css"> <!-- Componentes -->
+<link rel="stylesheet" href="css/responsive.css"> <!-- Responsive -->
 
 <style>
-/* Fondo */
+/* Fondo de la página */
 body {
     background: #f5f7ff;
 }
@@ -71,6 +73,7 @@ body {
     font-size: 0.85rem;
 }
 
+/* Hover botón */
 .checkout-box .add-btn:hover {
     transform: scale(1.03);
 }
@@ -80,45 +83,58 @@ body {
 
 <body>
 
+<!-- Encabezado -->
 <header class="main-header">
-    <h1 class="logo">Carrito</h1>
-    <a href="index.html" class="nav-btn">Volver</a>
+    <h1 class="logo">Carrito</h1> <!-- Título -->
+    <a href="index.html" class="nav-btn">Volver</a> <!-- Botón volver -->
 </header>
 
 <main>
 
+<!-- Sección del producto -->
 <section>
 <article class="cart-item">
+
+    <!-- Imagen del producto -->
     <div class="cart-img">
         <img src="img/producto2.png">
     </div>
+
+    <!-- Información del producto -->
     <div class="cart-info">
         <h3>Camiseta</h3>
         <p class="price">$300.000</p>
     </div>
+
 </article>
 </section>
 
+<!-- Total -->
 <h2 style="text-align:center;">Total: $300.000</h2>
 
+<!-- Texto informativo -->
 <p style="text-align:center;"><strong>Completa tus datos para finalizar la compra:</strong></p>
 
-<!-- FORMULARIO MEJORADO -->
+<!-- Formulario -->
 <div class="checkout-box">
 
     <h3>Datos de pago</h3>
 
     <form action="gracias.html" method="GET">
         
+        <!-- Campo nombre -->
         <label>Nombre completo</label>
         <input type="text" name="nombre" placeholder="Tu nombre completo" required>
 
+        <!-- Campo dirección -->
         <label>Dirección</label>
         <input type="text" name="direccion" placeholder="Dirección de envío" required>
 
+        <!-- Campo tarjeta -->
         <label>Tarjeta</label>
         <input type="text" name="tarjeta" placeholder="1234 5678 9012 3456" required minlength="16">
 
+        <!-- Botón enviar -->
         <button type="submit" class="add-btn">Finalizar compra</button>
 
     </form>

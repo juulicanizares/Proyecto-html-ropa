@@ -1,168 +1,168 @@
-.product-card {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
+.product-card { /* Tarjeta de producto */
+    background: white; /* Fondo blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta desbordes */
+    position: relative; /* Permite posicionar elementos internos */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Sombra */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Dirección vertical */
 }
 
-.img-container {
-    background: #abe0ff;
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+.img-container { /* Contenedor de imagen */
+    background: #abe0ff; /* Fondo azul claro */
+    height: 160px; /* Altura fija */
+    display: flex; /* Centrado */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    padding: 10px; /* Espaciado interno */
 }
 
-.img-container img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+.img-container img { /* Imagen dentro del contenedor */
+    max-width: 100%; /* Ajuste ancho */
+    max-height: 100%; /* Ajuste alto */
+    object-fit: contain; /* Mantiene proporción */
 }
 
-.product-info {
-    padding: 12px;
+.product-info { /* Información del producto */
+    padding: 12px; /* Espaciado */
 }
 
-.product-info h3 {
-    font-size: 0.8rem;
-    color: #333;
-    margin-bottom: 5px;
+.product-info h3 { /* Nombre del producto */
+    font-size: 0.8rem; /* Tamaño pequeño */
+    color: #333; /* Color oscuro */
+    margin-bottom: 5px; /* Separación */
 }
 
-.price {
-    font-weight: 900;
-    color: #0033ff;
-    font-size: 1rem;
-    margin-bottom: 10px;
+.price { /* Precio */
+    font-weight: 900; /* Negrita */
+    color: #0033ff; /* Azul */
+    font-size: 1rem; /* Tamaño */
+    margin-bottom: 10px; /* Espacio inferior */
 }
 
-.add-btn {
-    background: #099cd6;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 0.7rem;
+.add-btn { /* Botón agregar */
+    background: #099cd6; /* Color fondo */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ocupa todo el ancho */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cursor mano */
+    font-size: 0.7rem; /* Tamaño pequeño */
 }
 
-.filter-group {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-    overflow-x: auto;
-    padding: 5px 0;
+.filter-group { /* Contenedor de filtros */
+    display: flex; /* Flex */
+    gap: 8px; /* Espacio entre elementos */
+    margin-bottom: 20px; /* Separación inferior */
+    overflow-x: auto; /* Scroll horizontal */
+    padding: 5px 0; /* Espaciado */
 }
 
 
-.filter-wrapper input {
-    display: none;
+.filter-wrapper input { /* Inputs ocultos */
+    display: none; /* No visibles */
 }
 
-.filter-btn {
-    border: none;
-    padding: 10px 18px;
-    border-radius: 20px;
-    background: #fff;
-    color: #888;
-    font-weight: bold;
-    font-size: 0.75rem;
-    white-space: nowrap;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    cursor: pointer;
+.filter-btn { /* Botones de filtro */
+    border: none; /* Sin borde */
+    padding: 10px 18px; /* Espaciado */
+    border-radius: 20px; /* Redondeado */
+    background: #fff; /* Fondo blanco */
+    color: #888; /* Texto gris */
+    font-weight: bold; /* Negrita */
+    font-size: 0.75rem; /* Tamaño */
+    white-space: nowrap; /* No salto de línea */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra */
+    cursor: pointer; /* Cursor */
 }
 
 
 #all:checked ~ .filter-group label[for="all"],
 #camisetas:checked ~ .filter-group label[for="camisetas"],
-#hoodies:checked ~ .filter-group label[for="hoodies"] {
-    background: #0095ff;
-    color: white;
+#hoodies:checked ~ .filter-group label[for="hoodies"] { /* Filtro activo */
+    background: #0095ff; /* Fondo azul */
+    color: white; /* Texto blanco */
 }
 
 
-#all:checked ~ .product-grid .product-card {
+#all:checked ~ .product-grid .product-card { /* Mostrar todos */
     display: flex;
 }
 
 
-#camisetas:checked ~ .product-grid .product-card {
+#camisetas:checked ~ .product-grid .product-card { /* Ocultar todos */
     display: none;
 }
 
-#camisetas:checked ~ .product-grid .camiseta {
+#camisetas:checked ~ .product-grid .camiseta { /* Mostrar camisetas */
     display: flex;
 }
 
 
-#hoodies:checked ~ .product-grid .product-card {
+#hoodies:checked ~ .product-grid .product-card { /* Ocultar todos */
     display: none;
 }
 
-#hoodies:checked ~ .product-grid .hoodie {
+#hoodies:checked ~ .product-grid .hoodie { /* Mostrar hoodies */
     display: flex;
 }
 
 
-.badge {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 3px 10px;
-    border-radius: 10px;
-    font-size: 0.6rem;
-    font-weight: bold;
-    color: white;
+.badge { /* Etiqueta (oferta, nuevo) */
+    position: absolute; /* Posición absoluta */
+    top: 10px; /* Desde arriba */
+    left: 10px; /* Desde la izquierda */
+    padding: 3px 10px; /* Espaciado */
+    border-radius: 10px; /* Redondeado */
+    font-size: 0.6rem; /* Tamaño pequeño */
+    font-weight: bold; /* Negrita */
+    color: white; /* Texto blanco */
 }
 
-.oferta { background: #FF7E7E; }
-.stock { background: #7EB6FF; }
+.oferta { background: #FF7E7E; } /* Color oferta */
+.stock { background: #7EB6FF; } /* Color nuevo */
 
-.cart-status {
-    background: #5B4BFF;
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.8rem;
-    transition: 0.25s;
+.cart-status { /* Indicador carrito */
+    background: #5B4BFF; /* Fondo */
+    color: white; /* Texto */
+    padding: 6px 14px; /* Espaciado */
+    border-radius: 20px; /* Redondeado */
+    font-weight: bold; /* Negrita */
+    font-size: 0.8rem; /* Tamaño */
+    transition: 0.25s; /* Animación */
 }
 
-.cart-status:hover {
-    background: #4838E0;
+.cart-status:hover { /* Hover carrito */
+    background: #4838E0; /* Cambio de color */
 }
 
-.section-title {
-    font-size: 0.9rem;
-    margin: 15px 0;
-    color: #333;
+.section-title { /* Títulos */
+    font-size: 0.9rem; /* Tamaño */
+    margin: 15px 0; /* Espaciado */
+    color: #333; /* Color */
 }
 
-.search-box input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 15px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
+.search-box input { /* Input buscador */
+    width: 100%; /* Ancho completo */
+    padding: 12px; /* Espaciado */
+    border-radius: 15px; /* Redondeado */
+    border: 1px solid #ddd; /* Borde */
+    margin-bottom: 10px; /* Separación */
 }
 
-.back-btn {
-    display: inline-block;
-    margin-bottom: 15px;
-    padding: 8px 15px;
-    background: #00a2ff;
-    color: white;
-    border-radius: 10px;
-    font-size: 0.8rem;
+.back-btn { /* Botón volver */
+    display: inline-block; /* Inline */
+    margin-bottom: 15px; /* Espacio */
+    padding: 8px 15px; /* Espaciado */
+    background: #00a2ff; /* Fondo */
+    color: white; /* Texto */
+    border-radius: 10px; /* Redondeado */
+    font-size: 0.8rem; /* Tamaño */
 }
 
-.back-btn {
+.back-btn { /* Botón volver duplicado */
     background: #00a2ff;
     color: white;
     padding: 6px 12px;
@@ -171,40 +171,40 @@
 }
 
 
-.cart-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: white;
-    padding: 10px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+.cart-item { /* Item carrito */
+    display: flex; /* Flex */
+    align-items: center; /* Centrado vertical */
+    gap: 10px; /* Espacio */
+    background: white; /* Fondo */
+    padding: 10px; /* Espaciado */
+    border-radius: 15px; /* Bordes */
+    margin-bottom: 10px; /* Separación */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05); /* Sombra */
 }
 
 
-.cart-img {
-    width: 60px;
-    height: 60px;
-    background: #E8F3F0;
-    border-radius: 10px;
-    display: flex;
+.cart-img { /* Imagen carrito */
+    width: 60px; /* Tamaño */
+    height: 60px; /* Tamaño */
+    background: #E8F3F0; /* Fondo */
+    border-radius: 10px; /* Bordes */
+    display: flex; /* Centrado */
     align-items: center;
     justify-content: center;
 }
 
-.cart-img img {
+.cart-img img { /* Imagen dentro */
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
 
 
-.cart-info h3 {
+.cart-info h3 { /* Nombre producto carrito */
     font-size: 0.8rem;
 }
 
-#checkout {
+#checkout { /* Caja checkout */
     background: white;
     padding: 15px;
     border-radius: 15px;
@@ -212,25 +212,25 @@
     box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
-#checkout form {
+#checkout form { /* Formulario */
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#checkout input {
+#checkout input { /* Inputs */
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ddd;
 }
 
-.product-link {
+.product-link { /* Enlace producto */
     text-decoration: none;
     color: inherit;
     display: block;
 }
 
-#modal {
+#modal { /* Modal imagen */
     display: none;
     position: fixed;
     top: 0;
@@ -243,13 +243,13 @@
     z-index: 999;
 }
 
-#modal img {
+#modal img { /* Imagen modal */
     max-width: 90%;
     max-height: 80%;
     border-radius: 10px;
 }
 
-.cerrar {
+.cerrar { /* Botón cerrar */
     position: absolute;
     top: 20px;
     right: 20px;
@@ -258,41 +258,41 @@
     cursor: pointer;
 }
 
-.img-container a {
+.img-container a { /* Enlace imagen */
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.img-container a img {
+.img-container a img { /* Imagen dentro enlace */
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
 
-.size-selector input {
+.size-selector input { /* Radios ocultos */
     display: none;
 }
 
 
-.size-selector {
+.size-selector { /* Contenedor tallas */
     display: flex;
     gap: 10px;
 }
 
 
-.size-selector input:checked + label {
+.size-selector input:checked + label { /* Talla seleccionada */
     background: #0095ff;
     color: white;
 }
 
-input[type="radio"] {
+input[type="radio"] { /* Radios */
     display: none;
 }
 
 /* Imagen del carrito mejorada */
-.cart-img {
+.cart-img { /* Nueva versión */
     width: 70px;
     height: 70px;
     background: linear-gradient(135deg, #e0f2ff, #ffffff);
@@ -303,7 +303,7 @@ input[type="radio"] {
     padding: 8px;
 }
 
-.cart-img img {
+.cart-img img { /* Imagen */
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -311,7 +311,7 @@ input[type="radio"] {
 
 
 /* Formulario más bonito */
-#checkout {
+#checkout { /* Mejorado */
     background: white;
     padding: 20px;
     border-radius: 20px;
@@ -319,26 +319,26 @@ input[type="radio"] {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-#checkout form {
+#checkout form { /* Formulario */
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-#checkout label {
+#checkout label { /* Labels */
     font-size: 0.75rem;
     font-weight: bold;
     color: #555;
 }
 
-#checkout input {
+#checkout input { /* Inputs */
     padding: 12px;
     border-radius: 12px;
     border: 1px solid #ddd;
     transition: 0.2s;
 }
 
-#checkout input:focus {
+#checkout input:focus { /* Focus */
     border-color: #0095ff;
     outline: none;
     box-shadow: 0 0 0 2px rgba(0,149,255,0.2);
@@ -346,7 +346,7 @@ input[type="radio"] {
 
 
 /* Botón mejorado */
-.add-btn {
+.add-btn { /* Nueva versión */
     background: linear-gradient(135deg, #0095ff, #0066ff);
     color: white;
     border: none;
@@ -359,7 +359,7 @@ input[type="radio"] {
     transition: 0.2s;
 }
 
-.add-btn:hover {
+.add-btn:hover { /* Hover botón */
     transform: scale(1.03);
     opacity: 0.95;
 }

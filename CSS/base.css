@@ -1,29 +1,31 @@
 :root {
-    --primary: #5B4BFF;
-    --primary-dark: #4838E0;
-    --accent: #EEF0FF;
-    --bg-soft: #F1F3FF;
-    --bg-body: #F7F8FC;
-    --text-main: #1A1A1A;
-    --text-muted: #777;
-    --white: #ffffff;
+    /* Variables de colores principales del sitio */
+    --primary: #5B4BFF; /* Color principal */
+    --primary-dark: #4838E0; /* Variante oscura */
+    --accent: #EEF0FF; /* Color suave */
+    --bg-soft: #F1F3FF; /* Fondo suave */
+    --bg-body: #F7F8FC; /* Fondo general */
+    --text-main: #1A1A1A; /* Texto principal */
+    --text-muted: #777; /* Texto secundario */
+    --white: #ffffff; /* Blanco */
 }
 
+/* Reset general */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box; /* Incluye padding y borde en tamaño */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina relleno */
+    font-family: 'Segoe UI', sans-serif; /* Fuente */
 }
 
+/* Estilo del body */
 body {
-    background: linear-gradient(180deg, #F5F7FF 0%, #EDEFFF 100%);
-    color: var(--text-main);
+    background: linear-gradient(180deg, #F5F7FF 0%, #EDEFFF 100%); /* Fondo degradado */
+    color: var(--text-main); /* Color texto */
 }
 
-
+/* Enlaces */
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* Quita subrayado */
+    color: inherit; /* Hereda color */
 }
-

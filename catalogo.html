@@ -1,66 +1,69 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Define el documento como HTML5 -->
+<html lang="es"> <!-- Idioma del contenido -->
 <head>
-<meta charset="UTF-8">
-<title>Catálogo</title>
+<meta charset="UTF-8"> <!-- Permite caracteres especiales -->
+<title>Catálogo</title> <!-- Título de la pestaña -->
 
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/components.css">
+<!-- Archivos CSS para estilos -->
+<link rel="stylesheet" href="css/base.css"> <!-- Estilos generales -->
+<link rel="stylesheet" href="css/layout.css"> <!-- Estructura de la página -->
+<link rel="stylesheet" href="css/components.css"> <!-- Componentes visuales -->
 </head>
 
 <body>
 
+<!-- Encabezado principal -->
 <header class="main-header">
-    <h1 class="logo">Catálogo</h1>
+    <h1 class="logo">Catálogo</h1> <!-- Título de la página -->
 
+    <!-- Menú de navegación -->
     <nav class="header-nav">
-        <a href="index.html" class="nav-btn">Inicio</a>
-        <a href="catalogo.html" class="nav-btn active">Catálogo</a>
-        <a href="perfil.html" class="nav-btn">Perfil</a>
-        <a href="carrito.html" class="cart-status">🛒 0</a>
+        <a href="index.html" class="nav-btn">Inicio</a> <!-- Ir al inicio -->
+        <a href="catalogo.html" class="nav-btn active">Catálogo</a> <!-- Página actual -->
+        <a href="perfil.html" class="nav-btn">Perfil</a> <!-- Ir al perfil -->
+        <a href="carrito.html" class="cart-status">🛒 0</a> <!-- Carrito -->
     </nav>
 </header>
 
 <main>
 
-<h2 class="section-title">Todos los productos</h2>
+<h2 class="section-title">Todos los productos</h2> <!-- Título de sección -->
 
-<div class="filter-wrapper">
+<div class="filter-wrapper"> <!-- Contenedor de filtros y productos -->
 
+    <!-- Inputs tipo radio para filtrar (funcionan con CSS) -->
+    <input type="radio" name="filtro" id="all" checked> <!-- Mostrar todos -->
+    <input type="radio" name="filtro" id="camisetas"> <!-- Filtrar camisetas -->
+    <input type="radio" name="filtro" id="hoodies"> <!-- Filtrar hoodies -->
 
-    <input type="radio" name="filtro" id="all" checked>
-    <input type="radio" name="filtro" id="camisetas">
-    <input type="radio" name="filtro" id="hoodies">
-
-
+    <!-- Botones visibles para seleccionar filtros -->
     <div class="filter-group">
         <label for="all" class="filter-btn">Todos</label>
         <label for="camisetas" class="filter-btn">Camisetas</label>
         <label for="hoodies" class="filter-btn">Hoodies</label>
     </div>
 
-
+    <!-- Contenedor de todos los productos -->
     <div class="product-grid">
 
-
+        <!-- Producto: Camiseta undergold -->
         <article class="product-card camiseta">
-            <div class="img-container">
-                <a href="producto.html?prod=undgld">
+            <div class="img-container"> <!-- Imagen del producto -->
+                <a href="producto-undgld.html">
                     <img src="img/producto2.png" alt="Camiseta undergold">
                 </a>
             </div>
-            <div class="product-info">
+            <div class="product-info"> <!-- Información -->
                 <h3>Camiseta undergold</h3>
                 <p class="price">$300.000</p>
-                <button class="add-btn">AGREGAR</button>
+                <button class="add-btn">AGREGAR</button> <!-- Botón (sin funcionalidad JS) -->
             </div>
         </article>
 
-
+        <!-- Producto: Hoodie clemont -->
         <article class="product-card hoodie">
             <div class="img-container">
-                <a href="producto.html?prod=hoodie-clemont">
+                <a href="producto-hoodie-clemont.html">
                     <img src="img/producto3.png" alt="Hoodie clemont">
                 </a>
             </div>
@@ -71,10 +74,10 @@
             </div>
         </article>
 
-
+        <!-- Producto: Camiseta clemont -->
         <article class="product-card camiseta">
             <div class="img-container">
-                <a href="producto.html?prod=clemont">
+                <a href="producto-clemont.html">
                     <img src="img/producto4.png" alt="Camiseta clemont">
                 </a>
             </div>
@@ -85,10 +88,10 @@
             </div>
         </article>
 
-        <!-- PRODUCTO 4 -->
+        <!-- Producto: Hoodie UNDGLD -->
         <article class="product-card hoodie">
             <div class="img-container">
-                <a href="producto.html?prod=hoodie-undgld">
+                <a href="producto-hoodie-undgld.html">
                     <img src="img/producto1.png" alt="Hoodie UNDGLD">
                 </a>
             </div>

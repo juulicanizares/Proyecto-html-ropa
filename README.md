@@ -7,7 +7,7 @@ Este proyecto consiste en el desarrollo de una tienda web estática utilizando H
 ## Tecnologías utilizadas
 
 - HTML5
-- CSS3
+- CSS
 - Diseño Responsive
 
 
@@ -64,6 +64,35 @@ Se creó el archivo historial.html, el cual permitirá al usuario consultar el r
 Se implementó el archivo vacio.html como plantilla base o estructura inicial para futuras páginas. Este archivo facilita la creación de nuevas secciones manteniendo un diseño consistente.
 
 ![carpetas](IMG/vacio.png)
+
+
+# creacion del producto-clemont.html
+
+En esta sección se muestra el detalle de la camiseta clemont, incluyendo su imagen, precio, descripción y selección de talla antes de agregar el producto al carrito.
+
+
+![carpetas](IMG/camisaclemont.png)
+
+# creacion del producto-hoodie-clemont.html
+
+Aquí se presenta el hoodie clemont, permitiendo al usuario visualizar sus características, seleccionar la talla y añadirlo al carrito de compras.
+
+
+![carpetas](IMG/hoodieclemont.png)
+
+# creacion del producto-hoodie-undgld.html
+
+Esta vista corresponde al hoodie UNDGLD, donde se muestra la información del producto junto con opciones de selección de talla y acceso al carrito.
+
+
+![carpetas](IMG/hoodieundgl.png)
+
+
+# creacion del producto-undgld.html
+
+En esta página se detalla la camiseta undergold, mostrando su imagen, precio, descripción y opciones para seleccionar la talla antes de realizar la compra.
+
+![carpetas](IMG/camisaundgl.png)
 
 # creacion de base.css
 

@@ -363,3 +363,11 @@ input[type="radio"] { /* Radios */
     transform: scale(1.03);
     opacity: 0.95;
 }
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+}
